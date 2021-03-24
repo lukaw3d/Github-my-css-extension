@@ -1,0 +1,14 @@
+a[data-hydro-click*='{"event_type":"force_push_timeline_diff.click"']:after {
+  content: 'View Changes';
+  margin-left: 6px;
+
+  padding: 3px 10px;
+  line-height: 20px;
+
+  border: 1px solid;
+  border-radius: 6px;
+
+  color: var(--color-btn-outline-text);
+  background-color: var(--color-btn-bg);
+  border-color: var(--color-btn-border);
+}
