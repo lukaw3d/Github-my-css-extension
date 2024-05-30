@@ -8,7 +8,8 @@
       "matches": [
         "https://github.com/*"
       ],
-      "css": ["css.css"]
+      "css": ["css.css"],
+      "js": ["contentScript.js"]
     }
   ]
 }
