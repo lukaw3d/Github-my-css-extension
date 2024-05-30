@@ -12,3 +12,14 @@ a[data-hydro-click*='{"event_type":"force_push_timeline_diff.click"']:after {
   background-color: var(--color-btn-bg);
   border-color: var(--color-btn-border);
 }
+
+/* Collapse codecov comment */
+.unminimized-comment:has(.author[href="/apps/codecov"]) .edit-comment-hide {
+  transition: max-height 0.4s linear 0.5s;
+  max-height: 5000px;
+  overflow-y: hidden;
+}
+.unminimized-comment:has(.author[href="/apps/codecov"]):not(:hover) .edit-comment-hide {
+  max-height: 0px;
+}
+
