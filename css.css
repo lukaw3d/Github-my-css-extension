@@ -23,3 +23,21 @@ a[data-hydro-click*='{"event_type":"force_push_timeline_diff.click"']:after {
   max-height: 0px;
 }
 
+/* Prioritize PR reviewer options */
+[data-filterable-for="review-filter-field"],
+[data-filterable-for="assignee-filter-field"] {
+  .select-menu-item:has(input[value="891392"]), /* buberdds */
+  .select-menu-item:has(input[value="2093792"]), /* csillag */
+  .select-menu-item:has(input[value="9722540"]) /* lubej */
+  {
+    border: 1px solid white;
+  }
+
+  .select-menu-item:has(input[value="1486192"]), /* bennetyee */
+  .select-menu-item:has(input[value="2519303"]), /* abukosek */
+  .select-menu-item:has(input[value="5273064"]), /* xmzheng */
+  .select-menu-item:has(input[value="6883025"]) /* jberci */
+  {
+    opacity: 0.1;
+  }
+}
